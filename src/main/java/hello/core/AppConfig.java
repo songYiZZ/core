@@ -49,7 +49,9 @@ public class AppConfig {//공연 기획자
         System.out.println("call AppConfig.orderService");
         //2. OrderServiceImpl의 구현체를 넣어준다.
         return new OrderServiceImpl(memberRepository(), discountPolicy());
+//        return null;
     }
+
 
     @Bean
     public DiscountPolicy discountPolicy(){
